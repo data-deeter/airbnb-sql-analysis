@@ -5,8 +5,10 @@ This project uses SQL to explore and analyze a dataset of Airbnb listings in New
 
 Dataset: [NYC Airbnb Open Data](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data)
 
+The dataset should be added locally at `./data/new-york-city-airbnb-open-data/AB_NYC_2019.csv` to work preperly with `queries.ipynb`.
+
 ## 🔧 Tools Used
-- SQL (Mode/SQLite/PostgreSQL)
+- SQL
 - Basic aggregation and filtering
 - GitHub for project documentation
 
@@ -17,13 +19,5 @@ Dataset: [NYC Airbnb Open Data](https://www.kaggle.com/datasets/dgomonov/new-yor
 - How do review counts vary by listing type?
 
 ## 📁 Files
-- `queries.sql`: The SQL queries used to analyze the dataset
+- `queries.ipynb`: The SQL queries used to analyze the dataset
 - `summary.md`: Notes and summaries of key findings
-- `screenshots/`: Optional visual exports from Mode or DB Browser
-
-## 📌 Example Query
-```sql
-SELECT neighborhood_group, AVG(price) AS avg_price
-FROM airbnb_listings
-GROUP BY neighborhood_group
-ORDER BY avg_price DESC;
